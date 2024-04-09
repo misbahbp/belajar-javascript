@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function stack_push(stack) {
+            for (var i = 0; i < 5; i++) {
+                stack.push(i);
+            }
+            return stack
+        }
+        function stack_pop(stack) {
+            for (var i = 0; i < 5; i++){
+                var y = parseInt(stack[stack.length-1]);
+                stack.pop();
+                document.write( y + "<br>");
+            }
+            return stack;
+        }
+        function stack_peek(stack) {
+            var element = parseInt(stack[stack.length-1]);
+            document.write( "Element on stack top : " + element + "<br>");
+        }
+
+        function stack_search(stack, element) {
+            var pos = -1,co = 0;
+            while(stack.length > 0){
+                co++;
+                if(stack[stack.length-1] == element) {
+                    pos = co;
+                    break;
+                }
+                stack.pop();
+            }
+            if (pos == -1) 
+                document.write("Element not found" + "<br>");
+            else
+            document.write("Element is found at position"
+        + pos + "<br>");
+        }
+
+        stack=[];
+        stack = stack_push(stack);
+        stack = stack_pop(stack);
+        stack = stack_push(stack);
+        stack_peek(stack);
+        stack_search(stack, 2);
+        stack_search(stack, 6);
+        
+    </script>
+</body>
+</html>

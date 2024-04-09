@@ -1,0 +1,7 @@
+javascript call stack is a concept that pushes something on the stack and returns it, this means managing the order and context of the function calls in javascript, you can define call stack as track of the execution context of these functions
+
+and how does it work
+
+1. a callstack concept operates a method called the LIFO method, what is the LIFO method
+
+- the LIFO method is a principles that govern how elements are added to and removed from the stack
