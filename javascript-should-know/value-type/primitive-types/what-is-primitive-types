@@ -1,0 +1,5 @@
+Primitive Type was a immutable its mean are cant be changed, so let me explain it.
+
+when you make a string is a assigned to variable, you cant change the content of variable
+instead, if you want to change the value of variable you would have to assign a completely new value to it
+

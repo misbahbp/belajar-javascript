@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            name: "Jhon",
+            age: 30
+        };
+
+        let numbers = [1, 2, 3, 4, 5,];
+
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        let currentDate = new Date();
+
+        let pattren = /hello/i;
+
+        console.log(person.name);
+        person.age = 30;
+        console.log(person.age);
+
+        console.log(numbers[0]);
+        numbers.push(6);
+        console.log(numbers.length);
+
+        greet("Alice");
+
+        console.log(currentDate.getFullYear());
+
+        console.log(pattren.test("Hello"));
+    </script>
+</body>
+
+</html>
